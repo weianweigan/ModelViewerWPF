@@ -9,13 +9,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModelViewerWPF.Samples", "M
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9F944B6B-FB0A-4567-B63F-6CE08E0C5D46}"
 	ProjectSection(SolutionItems) = preProject
+		.github\workflows\build.yml = .github\workflows\build.yml
 		Directory.Build.props = Directory.Build.props
 		Index.html = Index.html
+		README.md = README.md
+		Version.props = Version.props
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{ECFFE1EE-35CE-417C-B3F5-5698B1A8E1A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelViewerWPFTests", "ModelViewerWPFTests\ModelViewerWPFTests.csproj", "{96491B59-4703-43A8-8417-A4B7EF141835}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModelViewerWPFTests", "ModelViewerWPFTests\ModelViewerWPFTests.csproj", "{96491B59-4703-43A8-8417-A4B7EF141835}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

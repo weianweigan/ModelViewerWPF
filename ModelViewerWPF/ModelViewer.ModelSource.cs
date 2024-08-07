@@ -31,7 +31,6 @@ public partial class ModelViewer
 
         string randomName = newUri?.GenerateRandomFile() ?? "";
         control.UpdateModelSourceRandomName(randomName);
-        control.ModelViewerLoaded = false;
         ChangeModelViewerProperty(control, "src", randomName);
     }
 

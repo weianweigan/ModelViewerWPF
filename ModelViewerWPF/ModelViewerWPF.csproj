@@ -4,8 +4,25 @@
     <TargetFrameworks>net48;net8.0-windows</TargetFrameworks>
     <UseWPF>true</UseWPF>
     <NoWarn>CS4014;SYSLIB0051</NoWarn>
-    <Version>1.0.0</Version>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Description>Wpf model viewer which display gltf or glb file based on webview2.</Description>
+    <PackageProjectUrl>https://github.com/weianweigan/ModelViewerWPF</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/weianweigan/ModelViewerWPF</RepositoryUrl>
+    <PackageTags>gltf;glb;modelviewer;3d</PackageTags>
+    <PackageIcon>3d.png</PackageIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\ModelViewerWPF.Samples\Assets\Images\3d.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2646-prerelease" />
