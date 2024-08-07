@@ -29,16 +29,5 @@ jobs:
       - name: Build
         run: dotnet build -c Release
 
-      - name: Pack
-        run: dotnet pack -c Release -o Artifacts
-
-      - name: Upload artifacts (nupkg)
-        uses: actions/upload-artifact@v3
-        with:
-          name: nupkgs
-          path: |
-            Artifacts/*.nupkg
-            Artifacts/*.snupkg
-
       - name: Publish to nuget.org
-        run: dotnet nuget push Artifacts/*.nupkg --api-key ${{ secrets.NugetKey }} --source https://api.nuget.org/v3/index.json
+        run: dotnet nuget push ModelViewerWPF/bin/Release/*.nupkg --api-key ${{ secrets.NugetKey }} --source https://api.nuget.org/v3/index.json
