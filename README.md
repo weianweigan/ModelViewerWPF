@@ -10,7 +10,7 @@ This control is based on the [model-viewer](https://modelviewer.dev/) and suppor
 
 ## Installation
 
-You can install ModelViewerWPF via the NuGet Package Manager:
+You can install [ModelViewerWPF](https://www.nuget.org/packages/ModelViewerWPF/) via the NuGet Package Manager:
 
 ```powershell
 Install-Package ModelViewerWPF
