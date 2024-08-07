@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="ModelViewerWPF/js/model-viewer.min.js"></script>
+
+    <!-- <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script> -->
+    <script type="module">
+        const modelViewer = document.getElementById('modelViewer');
+        modelViewer.addEventListener("load", function(){
+            alert("loaded");
+        });
+        
+    </script>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        model-viewer {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <model-viewer id="modelViewer"
+                  alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"
+                  src="ModelViewerWPF.Samples/Assets/Models/Horse.glb" shadow-intensity="1" camera-controls
+                  touch-action="pan-y"></model-viewer>
+</body>
+
+</html>
