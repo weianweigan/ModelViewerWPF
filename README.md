@@ -1,5 +1,8 @@
 # ModelViewerWPF
 
+![NuGet Version](https://img.shields.io/nuget/v/ModelViewerWPF)
+![NuGet Downloads](https://img.shields.io/nuget/dt/ModelViewerWPF)
+
 ModelViewerWPF is a WPF control that uses WebView2 to display 3D models within a WPF application. 
 This control is based on the [model-viewer](https://modelviewer.dev/) and supports *.gltf and *.glb formats.
 
@@ -37,6 +40,6 @@ Simple Usage
 </Window>
 ```
 
-## Generate mesh based [manidfold-csharp](https://github.com/weianweigan/manifold-csharp/blob/dev-csharp/bindings/csharp/Readme.md)
+## Generate glb files based on [manidfold-csharp](https://github.com/weianweigan/manifold-csharp/blob/dev-csharp/bindings/csharp/Readme.md)
 
 <img src="manifold.png" alt="window" height="400">
