@@ -14,6 +14,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="js\model-viewer.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="..\ModelViewerWPF.Samples\Assets\Images\3d.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
@@ -30,15 +34,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="ModelViewer.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Resource Include="js\model-viewer.min.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="js\model-viewer.min.js">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <Compile Update="ModelViewer.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 
 </Project>

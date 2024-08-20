@@ -142,6 +142,13 @@ public partial class ModelViewer : Control
                 case "/index.html":
                     content = CreateIndexContent();
                     break;
+                case "/js/model-viewer.min.js":
+                    using (Stream? resourceStream = Application.GetResourceStream(new Uri($"pack://application:,,,/ModelViewerWPF;component/{requestUri.AbsolutePath}")).Stream)
+                    {
+                        using var reader = new StreamReader(resourceStream!);
+                        content = reader.ReadToEnd();
+                    }
+                    break;
                 default:
                     content = ReadContent(requestUri.AbsolutePath);
                     break;
