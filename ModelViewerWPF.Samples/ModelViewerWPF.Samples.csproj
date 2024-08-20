@@ -10,8 +10,10 @@
 
    <ItemGroup>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+    <PackageReference Include="Dirkster.ColorPickerLib" Version="1.6.2" />
+    <PackageReference Include="ManifoldNET.MeshIO" Version="1.0.5-alpha" />
     <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2646-prerelease" />
-    <!--<PackageReference Include="ModelViewerWPF" Version="1.0.0-preview" />-->
+    <!--<PackageReference Include="ModelViewerWPF" Version="1.0.2-preview" />-->
   </ItemGroup>
 
   <ItemGroup>
